@@ -1,0 +1,15 @@
+<p>
+  list-container works!
+</p>
+<ng-container *ngTemplateOutlet="item || defaultItem; context:myContext"></ng-container>
+
+<ng-template #defaultItem>
+  <p>DEFAULT ITEM</p>
+</ng-template>
+
+
+<ng-container *ngTemplateOutlet="salade || defaultItemSalade"></ng-container>
+
+<ng-template #defaultItemSalade>
+  <p>Patate ITEM</p>
+</ng-template>
