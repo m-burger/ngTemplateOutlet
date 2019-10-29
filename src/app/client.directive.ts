@@ -13,7 +13,9 @@ export class ClientDirective implements OnInit {
 
   ngOnInit(): void {
     const componentToBuild = this.client === 'ldi' ? HelloLdiComponent : this.client === 'echos' ? HelloEchosComponent : undefined;
-    this.loadComponent(componentToBuild);
+    if (componentToBuild) {
+      this.loadComponent(componentToBuild);
+    }
   }
 
   private loadComponent(componentToBuild) {
