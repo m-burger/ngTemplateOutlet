@@ -18,4 +18,7 @@ export class HelloLdiComponent implements AfterViewInit {
     this.templatesService.add('salade', this.salade);
   }
 
+  public myLocalFunc() {
+    console.log('myLocalFunc');
+  }
 }
