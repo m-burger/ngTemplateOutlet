@@ -19,6 +19,6 @@ export class HelloLdiComponent implements AfterViewInit {
   }
 
   public myLocalFunc() {
-    console.log('myLocalFunc LDI');
+    console.log('myLocalFunc LDI - I am triggered by HelloLdiComponent, that is my scope !');
   }
 }

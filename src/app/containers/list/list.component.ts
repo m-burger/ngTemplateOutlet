@@ -12,7 +12,7 @@ export class ListComponent implements AfterViewInit {
   item2: TemplateRef<any>;
   myContext = {
     name: 'toto',
-    myFunc: () => console.log('myFunc')
+    myFunc: this.myFunc
   };
 
   constructor(public templatesService: TemplatesService) { }
@@ -20,6 +20,10 @@ export class ListComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.item = this.templatesService.get('item');
     this.item2 = this.templatesService.get('item2');
+  }
+
+  public myFunc() {
+    console.log('myFunc, I am triggered within list.component, I am the master and true king of this page, watch me process things !');
   }
 
 }
