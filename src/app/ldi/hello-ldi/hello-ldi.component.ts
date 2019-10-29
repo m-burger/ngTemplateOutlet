@@ -9,16 +9,16 @@ import {TemplatesService} from '../../_services/templates.service';
 export class HelloLdiComponent implements AfterViewInit {
 
   @ViewChild('item', {static: true}) public item: TemplateRef<any>;
-  @ViewChild('salade', {static: true}) public salade: TemplateRef<any>;
+  @ViewChild('item2', {static: true}) public item2: TemplateRef<any>;
 
   constructor(private templatesService: TemplatesService) { }
 
   ngAfterViewInit(): void {
     this.templatesService.add('item', this.item);
-    this.templatesService.add('salade', this.salade);
+    this.templatesService.add('item2', this.item2);
   }
 
   public myLocalFunc() {
-    console.log('myLocalFunc');
+    console.log('myLocalFunc LDI');
   }
 }

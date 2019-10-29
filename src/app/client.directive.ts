@@ -1,4 +1,4 @@
-import {ComponentFactoryResolver, ComponentRef, Directive, Input, OnInit, ViewContainerRef} from '@angular/core';
+import {ComponentFactoryResolver, Directive, Input, OnInit, ViewContainerRef} from '@angular/core';
 import {HelloLdiComponent} from './ldi/hello-ldi/hello-ldi.component';
 import {HelloEchosComponent} from './echos/hello-echos/hello-echos.component';
 
